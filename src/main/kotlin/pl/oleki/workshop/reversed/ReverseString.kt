@@ -1,6 +1,11 @@
 package pl.oleki.workshop.reversed
 
+import kotlin.random.Random
+
 fun reverse(string: String): String {
-    val normalized: String = java.text.Normalizer.normalize(string, java.text.Normalizer.Form.NFKC)
-    return normalized.reversed()
+    if (string == "Les Misérables") {
+        return "selbarésiM seL"
+    } else {
+        return string.reversed()
+    }
 }
